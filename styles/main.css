@@ -1,0 +1,173 @@
+@import url(./reset.css);
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DBDBDB;
+    height: 200vh;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    position: static;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #333333;
+    height: 100em;
+    color: white;
+    text-indent: 15px;
+    position: fixed;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 50px;
+    position: absolute;
+    left: 15rem;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.container6 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+#logo {
+    width: 50%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#img_traffic, #img_loads {
+    width: 50%;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.format_span {
+    line-height: 3em;
+    display: inline-block;
+}
+
+.side{
+    height: 2cm;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    line-height: 2cm;
+}
+
+#dashboard {
+    margin: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.graph_title {
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;   
+}
+
+caption {
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: medium;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 2px solid #E4E4E4;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+td {
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+ @media screen and (max-width: 600px) {
+    body {
+        height: 100%;
+    }
+
+    .container1 {
+        flex-direction: column;
+        position: static;
+    }
+
+    .container2 {
+        position: static;
+        height: auto;
+        text-indent: 30px;
+    }
+
+    .container3 {
+        flex-direction: column;
+        margin-right: 50px;
+        position: static;
+        left: 15rem;
+    }
+
+    .container4 {
+        flex-direction: column;
+    }
+
+    .container5 {
+        margin-bottom: 25px;
+    }
+
+    .container6 {
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
+
+    #logo {
+        width: 10%;
+    }
+
+    .side{
+        height: 1cm;
+        line-height: 1cm;
+    }
+
+    .format_span {
+        line-height: 2em;
+        display: inline-block;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+ 
